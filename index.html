@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page dinâmica e moderna com efeitos especiais">
+    <meta name="theme-color" content="#1a1a2e">
+    <title>Landing Page Dinâmica</title>
+    <!-- Preload crítico para melhor performance -->
+    <link rel="preload" href="styles/main.css" as="style">
+    <link rel="preload" href="js/main.js" as="script">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- DNS Prefetch para recursos externos (se houver) -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://formsubmit.co">
+    <!-- Icon library (Font Awesome free via CDN) -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pf8f5fS8V1v0CfYbG6QYw+f8s3UeVQw9r1rKx1m9h2+q8O1lYb8G3DkG2xQZ1Xl7Yz1K1z1FZ1g3z1Y1z1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/t4logo.png" alt="Logo" class="logo-img">
+            </div>
+            <ul class="nav-menu">
+                <!-- Navegação removida a pedido do usuário -->
+            </ul>
+            <div class="lang-switch">
+                <button id="lang-btn" title="Change language" aria-label="Change language">
+                    <span class="lang-flag" id="lang-flag">🇧🇷</span> <span class="lang-label" id="lang-label">PT</span>
+                </button>
+            </div>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-aos="fade-up" style="margin-bottom:0.5rem;font-size:clamp(1.2rem,4vw,2rem);">
+                Automatize processos e otimize seu tempo
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" style="font-size:clamp(0.95rem,2vw,1.15rem);margin-bottom:1.2rem;line-height:1.5;">
+                Soluções sob medida em automação: integro sistemas, elimino tarefas manuais e faço seu negócio rodar no automático.<br>
+                Experiência com WhatsApp, planilhas, e-mail, bots e fluxos personalizados.
+            </p>
+            <div style="display:flex; gap:0.75rem; flex-wrap:wrap; justify-content:center;">
+                <a href="#projects" class="cta-button" style="padding:0.7rem 1.5rem; font-size:1rem;">Ver exemplos</a>
+                <a href="#contact" class="cta-button cta-secondary" style="padding:0.7rem 1.5rem; font-size:1rem; background:transparent; color:var(--primary-color); border:2px solid var(--primary-color);">Solicitar automação</a>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="floating-orb orb-1"></div>
+            <div class="floating-orb orb-2"></div>
+            <div class="floating-orb orb-3"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Projetos</h2>
+
+            <div id="project-filters" class="project-filters" aria-hidden="false"></div>
+
+            <div id="projects-grid" class="project-grid" data-aos="fade-up">
+                <!-- Project cards serão renderizados dinamicamente por js/main.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="about-grid">
+                <div class="about-card" data-aos="flip-left">
+                    <div class="card-icon">🚀</div>
+                    <h3>Moderno</h3>
+                    <p>Tecnologia de ponta para o melhor desempenho e experiência visual.</p>
+                </div>
+                <div class="about-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="card-icon">✨</div>
+                    <h3>Elegante</h3>
+                    <p>Design sofisticado com atenção aos detalhes mais finos.</p>
+                </div>
+                <div class="about-card" data-aos="flip-left" data-aos-delay="400">
+                    <div class="card-icon">⚡</div>
+                    <h3>Rápido</h3>
+                    <p>Otimizado para GitHub Pages com zero dependências externas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Recursos</h2>
+            <div class="features-grid">
+                <div class="feature-item" data-aos="zoom-in">
+                    <div class="feature-number">01</div>
+                    <h3>Navegação com Blur</h3>
+                    <p>Menu com efeito glassmorphism que muda ao fazer scroll.</p>
+                </div>
+                <div class="feature-item" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="feature-number">02</div>
+                    <h3>Animações Suaves</h3>
+                    <p>Transições e efeitos que melhoram a experiência do usuário.</p>
+                </div>
+                <div class="feature-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="feature-number">03</div>
+                    <h3>Responsivo</h3>
+                    <p>Perfeito em qualquer dispositivo: desktop, tablet ou mobile.</p>
+                </div>
+                <div class="feature-item" data-aos="zoom-in" data-aos-delay="450">
+                    <div class="feature-number">04</div>
+                    <h3>Sem Dependências</h3>
+                    <p>HTML, CSS e JavaScript puro para máxima compatibilidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-label">Entre em Contato</div>
+            <h2 class="contact-headline">Pronto para Transformar seu Negócio?</h2>
+            <p class="contact-subtitle">Fale comigo pelo WhatsApp e descubra como a automação pode reduzir tempo e custos, entregando resultados reais e mensuráveis.</p>
+
+            <div class="contact-cta" data-aos="fade-up">
+                <!-- Substitua o número abaixo pelo seu número no formato internacional (ex: 5511999999999) -->
+                <a class="whatsapp-button whatsapp-button--large" href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seus%20projetos" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    <span>Contate-me pelo WhatsApp</span>
+                </a>
+            </div>
+
+            <p class="contact-note">Junte-se a clientes satisfeitos que já economizam tempo com automações reais.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Landing Page Dinâmica. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Video modal (inserido próximo ao final do body) -->
+    <div id="video-modal" class="video-modal" aria-hidden="true">
+        <div class="video-modal__backdrop" data-action="close-modal"></div>
+        <div class="video-modal__content" role="dialog" aria-modal="true">
+            <button class="video-modal__close" aria-label="Fechar" data-action="close-modal">×</button>
+            <div class="video-modal__wrapper" id="video-wrapper"><!-- vídeo será injetado aqui --></div>
+            <div class="video-modal__meta">
+                <h3 id="modal-title"></h3>
+                <p id="modal-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script carregado no final para não bloquear renderização -->
+    <script defer src="js/main.js"></script>
+    <script>
+    const langBtn = document.getElementById('lang-btn');
+    let isPT = true;
+    langBtn.addEventListener('click', () => {
+        isPT = !isPT;
+        if (!isPT) {
+            // Para inglês
+            document.getElementById('lang-flag').textContent = '🇺🇸';
+            document.getElementById('lang-label').textContent = 'EN';
+            document.querySelector('.hero-title').innerHTML = "Automate processes and optimize your time";
+            document.querySelector('.hero-subtitle').innerHTML = 
+                "Custom automation solutions: system integration, elimination of manual tasks, and business process automation.<br>Experience with WhatsApp, spreadsheets, email, bots and bespoke workflows.";
+            document.querySelector('.cta-button').textContent = "View examples";
+            document.querySelector('.cta-button.cta-secondary').textContent = "Request automation";
+            // Seção Projetos
+            let projTitle = document.querySelector('#projects .section-title');
+            if (projTitle) projTitle.textContent = "Projects";
+        } else {
+            // Para português
+            document.getElementById('lang-flag').textContent = '🇧🇷';
+            document.getElementById('lang-label').textContent = 'PT';
+            document.querySelector('.hero-title').innerHTML = "Automatize processos e otimize seu tempo";
+            document.querySelector('.hero-subtitle').innerHTML =
+                "Soluções sob medida em automação: integro sistemas, elimino tarefas manuais e faço seu negócio rodar no automático.<br>Experiência com WhatsApp, planilhas, e-mail, bots e fluxos personalizados.";
+            document.querySelector('.cta-button').textContent = "Ver exemplos";
+            document.querySelector('.cta-button.cta-secondary').textContent = "Solicitar automação";
+            let projTitle = document.querySelector('#projects .section-title');
+            if (projTitle) projTitle.textContent = "Projetos";
+        }
+    });
+    </script>
+</body>
+</html>
